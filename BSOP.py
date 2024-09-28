@@ -31,9 +31,18 @@ def b_scholes(S0, strike, t, r, sigma, type='call'):
     return price
 
 st.set_page_config(layout="wide")
-st.sidebar.markdown("[LinkedIn Profile](https://www.linkedin.com/in/devonwhitakeruk)", unsafe_allow_html=True)
-st.sidebar.write("Created by: Devon Whitaker")
 
+st.sidebar.write("Black Scholes Model")
+st.sidebarmarkdown(
+    """
+    <div style="color: #28a745; font-size: 18px;">
+        Created by:
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+st.sidebar.markdown("[Devon Whitaker](https://www.linkedin.com/in/devonwhitakeruk)", unsafe_allow_html=True)
+st.sidebar.markdown("---")
 st.sidebar.subheader("Pricing Parameters:")
 
 S0_slider = st.sidebar.number_input('Select Current Price:', min_value=0.00, value=100.00, step=0.01)
