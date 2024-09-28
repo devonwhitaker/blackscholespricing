@@ -155,5 +155,3 @@ with col1:
 
 with col2:
     st.plotly_chart(put_fig, use_container_width=True)
-
-print(put_df.head())
