@@ -33,7 +33,7 @@ def b_scholes(S0, strike, t, r, sigma, type='call'):
 st.set_page_config(layout="wide")
 
 st.sidebar.write("Black Scholes Model")
-st.sidebarmarkdown(
+st.sidebar.markdown(
     """
     <div style="color: #28a745; font-size: 18px;">
         Created by:
