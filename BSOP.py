@@ -32,7 +32,8 @@ def b_scholes(S0, strike, t, r, sigma, type='call'):
 
 st.set_page_config(layout="wide")
 
-st.sidebar.header("Pricing Parameters:")
+st.sidebar.header("Created by: Devon Whitaker")
+st.sidebar.subheader("Pricing Parameters:")
 
 S0_slider = st.sidebar.number_input('Select Current Price:', min_value=0.00, value=100.00, step=0.01)
 strike_slider = st.sidebar.number_input('Select Strike Price:', min_value=0.00, value=100.00, step=0.01)
