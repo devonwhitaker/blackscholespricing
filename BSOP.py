@@ -31,8 +31,9 @@ def b_scholes(S0, strike, t, r, sigma, type='call'):
     return price
 
 st.set_page_config(layout="wide")
+st.sidebar.markdown("[LinkedIn Profile](https://www.linkedin.com/in/devonwhitakeruk)", unsafe_allow_html=True)
+st.sidebar.write("Created by: Devon Whitaker")
 
-st.sidebar.header("Created by: Devon Whitaker")
 st.sidebar.subheader("Pricing Parameters:")
 
 S0_slider = st.sidebar.number_input('Select Current Price:', min_value=0.00, value=100.00, step=0.01)
